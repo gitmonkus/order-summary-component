@@ -164,7 +164,7 @@ img {
   }
 
   .main__container {
-    padding-top: 42px;
+    padding-top: 41px;
     padding-right: 48px;
     padding-left: 48px;
     padding-bottom: 64px;
@@ -183,10 +183,10 @@ img {
     margin-bottom: 20px;
   }
 
-  .main__plan {
+  /* .main__plan {
     padding: 25px 24px;
     margin-bottom: 32px;
-  }
+  } */
 
   .main__container__annualPlan__cost {
     margin-right: 94px;
