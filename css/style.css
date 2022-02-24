@@ -183,10 +183,10 @@ img {
     margin-bottom: 20px;
   }
 
-  /* .main__plan {
-    padding: 25px 24px;
-    margin-bottom: 32px;
-  } */
+  .main__plan {
+    padding: 1rem;
+    margin-bottom: 24px;
+  }
 
   .main__container__annualPlan__cost {
     margin-right: 94px;
