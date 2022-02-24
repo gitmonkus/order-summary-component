@@ -5,6 +5,7 @@
   --desaturatedBlue: hsl(224, 23%, 55%);
   --darkBlue: hsl(223, 47%, 23%);
   --white: #fff;
+  --changeHover: #766cf1;
 }
 
 * {
@@ -34,11 +35,12 @@ img {
   max-width: 100%;
 }
 
-@media (min-width: 1440px) {
-}
-
 /* TOP BG IMAGE */
 .top__bg__img {
+  background: url(../images/pattern-background-mobile.svg) no-repeat center;
+  background-size: cover;
+  min-height: 194px;
+  min-width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -95,6 +97,11 @@ img {
   margin-bottom: 24px;
 }
 
+.main__container__annualPlan__cost {
+  margin-right: 50px;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
 .main__plan__annualPlan {
   font-weight: 900;
   font-size: 14px;
@@ -108,7 +115,8 @@ img {
   font-size: 14px;
   line-height: 19px;
   margin-top: 0;
-  margin-bottom: 3px;
+  margin-bottom: 0;
+
   color: var(--desaturatedBlue);
 }
 
@@ -140,4 +148,92 @@ img {
   line-height: 20px;
   color: var(--desaturatedBlue);
   text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+  .top__bg__img {
+    background: url(../images/pattern-background-desktop.svg) no-repeat center;
+    background-size: cover;
+    min-height: 427.33px;
+    min-width: 100%;
+  }
+
+  .main__section {
+    max-width: 450px;
+    min-height: 697px;
+  }
+
+  .main__container {
+    padding-top: 45px;
+    padding-right: 48px;
+    padding-left: 48px;
+    padding-bottom: 48px;
+  }
+
+  .main__h1 {
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 17px;
+  }
+
+  .main__p {
+    font-size: 16px;
+    line-height: 26px;
+
+    margin-bottom: 20px;
+  }
+
+  .main__plan {
+    padding: 25px 24px;
+    margin-bottom: 32px;
+  }
+
+  .main__container__annualPlan__cost {
+    margin-right: 94px;
+    margin-left: 20px;
+  }
+
+  .main__plan__annualPlan {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 6px;
+  }
+  .main__plan__cost {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .main__plan__change {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .main__plan__change:hover,
+  .main__plan__change:focus {
+    color: var(--changeHover);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .main__btn {
+    margin-bottom: 32px;
+  }
+
+  .main__btn:hover,
+  .main__btn:focus {
+    cursor: pointer;
+    background: var(--changeHover);
+  }
+
+  .main__cancel,
+  .main__btn,
+  .main__plan__change {
+    transition: all 300ms ease;
+  }
+
+  .main__cancel:hover,
+  .main__cancel:focus {
+    cursor: pointer;
+    color: var(--darkBlue);
+  }
 }
